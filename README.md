@@ -64,7 +64,7 @@ Usaremos um algoritmo de recomendação para o setor de vendas do spc, que irá 
 
 ## Overview técnico
 
-Em progresso....
+Em progresso...
 
 
  ## Saiba mais
@@ -75,34 +75,34 @@ Em progresso....
 
 ## Entregas
 
-### Kick of do projeto : 
+### Kick of do projeto: 
 * Data: (28/02/2021 a 06/03/2021)
 
-### Sprint 1 : 
+### Sprint 1: 
 * Levantamento de requisitos
 * Brainstorming
-* Analises no jupyter
+* Análises no Jupyter Notebook
 * Escopo do projeto
 * Data: (08/03/2021 a 28/03/2021)
 
-### Sprint 2 :
+### Sprint 2:
 * Conclusão da coleta dos requisitos
-* Estudos sobre IA 
-* Analise na api do twitter
+* Estudos sobre IA
+* Análise na API do Twitter
 * Elaboração das bases de dados
 * Data: (29/03/2021 a 04/04/2021)
 
-### Sprint 3 :
+### Sprint 3:
 * Integração da IA com as bases de dados
 * Integração da IA com o back end
 * Detalhamentos dos processos técnicos
 * Iniciação do front end
 * Data: (26/04/2021 a 16/05/2021)
 
-### Sprint 4 :
+### Sprint 4:
 * Deploy do Front
 * Diagramação UML
 * Integração do Frontend com o Backend
 * Data: (17/05/2021 a 05/06/2020)
 
-### Apresentação final :
+### Apresentação final:
