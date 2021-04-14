@@ -44,7 +44,7 @@ Usaremos um algoritmo de recomendação para o setor de vendas do spc, que irá 
 ## Tecnologias Utilizadas
 * <p>
   <a href="https://www.python.org/">
- Python                                                                                                                                           
+  Python                                                                                                                                           
 </p>
 
 * <p>
@@ -54,12 +54,12 @@ Usaremos um algoritmo de recomendação para o setor de vendas do spc, que irá 
 
 * <p>
   <a href="https://jinja.palletsprojects.com/en/2.10.x/api/">
-   Jinja2                                                                                                                                           
+  Jinja2                                                                                                                                           
 </p>
 
 * <p>
   <a href="https://getbootstrap.com/">
-   Bootstrap                                                                                                                                           
+  Bootstrap                                                                                                                                           
 </p>
 
 ## Overview técnico
