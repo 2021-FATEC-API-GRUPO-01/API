@@ -44,6 +44,7 @@ Usaremos um algoritmo de recomendação para o setor de vendas do SPC, que irá 
 ## Tecnologias Utilizadas
 * <p>
   <a href="https://www.python.org/">
+  <img alt="Elixir" src="https://user-images.githubusercontent.com/45819790/95101838-067eb780-0709-11eb-91c8-5ffde324230a.png" height="30px" style="max-width:100%;"> </a> 
   Python                                                                                                                                           
 </p>
 
@@ -54,7 +55,6 @@ Usaremos um algoritmo de recomendação para o setor de vendas do SPC, que irá 
 
 * <p>
   <a href="https://jinja.palletsprojects.com/en/2.10.x/api/">
-    <img alt="python" src="https://user-images.githubusercontent.com/42500368/114731807-68ebec80-9d18-11eb-8995-f5ccc064a1a5.png" ></img>
   Jinja2                                                                                                                                           
 </p>
 
