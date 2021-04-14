@@ -55,6 +55,7 @@ Usaremos um algoritmo de recomendação para o setor de vendas do SPC, que irá 
 
 * <p>
   <a href="https://jinja.palletsprojects.com/en/2.10.x/api/">
+    <img alt="python" src="https://user-images.githubusercontent.com/42500368/114731807-68ebec80-9d18-11eb-8995-f5ccc064a1a5.png" ></img>
   Jinja2                                                                                                                                           
 </p>
 
