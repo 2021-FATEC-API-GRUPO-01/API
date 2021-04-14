@@ -15,7 +15,7 @@ FATEC São José dos Campos - Professor Jessen Vidal
 
 *Professor:* Eduardo Sakaue
 
-Projeto elaborado para resolver o problema proposto pelo SPC, decidimos utilizar a tecnologia de inteligencia artifical para traçar perfis e recomendar produtos
+Projeto elaborado para resolver o problema proposto pelo SPC, decidimos utilizar a tecnologia de inteligencia artifical para traçar perfis e recomendar produtos.
 
 ## Equipe: 
 
