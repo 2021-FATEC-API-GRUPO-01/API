@@ -1,4 +1,3 @@
-https://user-images.githubusercontent.com/26223657/114731633-4a85f100-9d18-11eb-9ec7-fbf5a5813220.png
 # API
 
   ##
