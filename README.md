@@ -31,8 +31,8 @@ Projeto elaborado para resolver o problema proposto pelo SPC, decidimos utilizar
 ### Segmentação do cliente?
 Possuem uma segmentação antiga (2013) que não expressa o mercado atual e é pouco utilizada internamente.
 ### Temos nosso mercado potencial mapeado?
-Possuem ferramenta de mkt share, ampla que não possui o detalhamento do potencial financeiro ou perfil, que acaba subutilizada.
-### Possuimos analise/estratégia por mercado x produto x concorrente x segmento?
+Possuem ferramenta de Market Share, ampla que não possui o detalhamento do potencial financeiro ou perfil, que acaba subutilizada.
+### Possuimos análise/estratégia por mercado x produto x concorrente x segmento?
 A atual análise pe gerada manualmente, o projeto produzirá automação e extração dessas análises.
 
 
