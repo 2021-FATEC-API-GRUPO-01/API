@@ -274,7 +274,7 @@ Em conjunto com o endpoint de sentimentos do Azure, é necessário combinar os d
 
   A entrega foi a complementação da base de dados com fontes externas como por exemplo: dados raspados pela api twitter.
   Utilizamos a api do google maps para transformar as coordenadas em nomes de locais.
-  Expandimos os campos da base inicial fornecidade para ajudar no algoritmo de recomendação da próxima sprint, alguns exemplos:
+  Expandimos os campos da base inicial fornecida para ajudar no algoritmo de recomendação da próxima sprint, alguns exemplos:
   <img src="https://github.com/2021-FATEC-API-GRUPO-01/API/blob/c9ee6a26b59f04baf864acd6ca41e6ac8549a26e/dados.gif" width="900" height="700" />
  
   
