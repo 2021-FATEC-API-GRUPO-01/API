@@ -39,7 +39,7 @@ A atual análise pe gerada manualmente, o projeto produzirá automação e extra
 ## Solução
 ### Maior detalhamento do cliente, que permitirá ações comerciais personalizadas
 Usaremos um algoritmo de recomendação para o setor de vendas do SPC, que irá recomendar o produto mais adequado de acordo com o perfil de cada cliente. Foram selecionadas algumas bases para nos auxiliar nessa complementação de dados para as análises que desejamos. Realizamos uma raspagem de dados na API do twitter. Usaremos os Top Trends de regiões para auxiliar o algoritmo de recomendação.
-
+Desenvolveremos um sistema web onde o analista poderá logar e visualizar as análises disponiveis baseado nos nossos modelos de dados e no nosso modelo de inteligência artificial, é importante salientar que nossa base estara em constante manutenção, afim de agregar cade vez mais valor.
 
 ## Tecnologias Utilizadas
 * <p>
