@@ -242,7 +242,8 @@ Em conjunto com o endpoint de sentimentos do Azure, é necessário combinar os d
         week_score = mean_score(sentiments)
         print(week_score)
         week_logic(week_score)
-        
+  ### Inteligencia Artificial:
+  Em progresso ...
         
  ## Saiba mais
   #### :bellhop_bell:  Links úteis, FAQ e Leitura:
@@ -261,6 +262,9 @@ Em conjunto com o endpoint de sentimentos do Azure, é necessário combinar os d
 * Escopo do projeto
 * Data: (08/03/2021 a 28/03/2021)
 
+  A entrega foi analises no jupyter com a base fornecida pelo spc, transformamos a localização em latitude e longitude em gráficos de calor.
+  <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="40" height="40" />
+  
 ### Sprint 2:
 * Conclusão da coleta dos requisitos
 * Estudos sobre IA
@@ -268,6 +272,10 @@ Em conjunto com o endpoint de sentimentos do Azure, é necessário combinar os d
 * Elaboração das bases de dados
 * Data: (29/03/2021 a 04/04/2021)
 
+  A entrega foi a complementação da base de dados com fontes externas como por exemplo: dados raspados pela api twitter.
+  Utilizamos a api do google maps para transformar as coordenadas em nomes de locais.
+  Expandimos os campos da base inicial fornecidade para ajudar no algoritmo de recomendação da próxima sprint
+  
 ### Sprint 3:
 * Integração da IA com as bases de dados
 * Integração da IA com o back end
