@@ -263,7 +263,7 @@ Em conjunto com o endpoint de sentimentos do Azure, é necessário combinar os d
 * Data: (08/03/2021 a 28/03/2021)
 
   A entrega foi analises no jupyter com a base fornecida pelo spc, transformamos a localização em latitude e longitude em gráficos de calor.
-  <img src="https://media.giphy.com/media/vFKqnCdLPNOKc/giphy.gif" width="40" height="40" />
+  <img src="https://raw.githubusercontent.com/2021-FATEC-API-GRUPO-01/API/main/jupyterGraphics.gif" width="200" height="150" />
   
 ### Sprint 2:
 * Conclusão da coleta dos requisitos
