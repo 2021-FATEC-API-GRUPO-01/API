@@ -65,14 +65,14 @@ Usaremos um algoritmo de recomendação para o setor de vendas do SPC, que irá 
 
 ## Overview técnico
 
-###O que é geocodificação?
+### O que é geocodificação?
 Geocodificação é o processo de conversão de endereços em coordenadas geográficas (como latitude 37,423021 e longitude -122,083739), que você pode usar para colocar marcadores em um mapa ou posicionar o mapa.
 
 A geocodificação reversa é o processo de conversão de coordenadas geográficas em um endereço legível por humanos.
 
 Você também pode usar a API de geocodificação para localizar o endereço de um determinado ID de local.
 
-###Parâmetros obrigatórios em uma solicitação de geocodificação reversa:
+### Parâmetros obrigatórios em uma solicitação de geocodificação reversa:
 
 latlng - Os valores de latitude e longitude especificando o local para o qual você deseja obter o endereço mais próximo e legível.
 Certifique-se de que não haja espaço entre os valores de latitude e longitude quando passados no latlng parâmetro.
