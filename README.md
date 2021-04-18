@@ -65,7 +65,20 @@ Usaremos um algoritmo de recomendação para o setor de vendas do SPC, que irá 
 
 ## Overview técnico
 
-Em progresso...
+###O que é geocodificação?
+Geocodificação é o processo de conversão de endereços em coordenadas geográficas (como latitude 37,423021 e longitude -122,083739), que você pode usar para colocar marcadores em um mapa ou posicionar o mapa.
+
+A geocodificação reversa é o processo de conversão de coordenadas geográficas em um endereço legível por humanos.
+
+Você também pode usar a API de geocodificação para localizar o endereço de um determinado ID de local.
+
+###Parâmetros obrigatórios em uma solicitação de geocodificação reversa:
+
+latlng - Os valores de latitude e longitude especificando o local para o qual você deseja obter o endereço mais próximo e legível.
+Certifique-se de que não haja espaço entre os valores de latitude e longitude quando passados no latlng parâmetro.
+
+(colocar print addressLatLong aqui)
+Os "formatted_address"resultados não são apenas endereços postais, mas qualquer forma de nomear geograficamente um local. Por exemplo, ao geocodificar um ponto na cidade de Chicago, o ponto geocodificado pode ser denotado como um endereço de rua, como a cidade (Chicago), como seu estado (Illinois) ou como um país (Estados Unidos). Todos são "endereços" para o geocodificador. O geocodificador reverso retorna qualquer um desses tipos como resultados válidos.
 
 
  ## Saiba mais
