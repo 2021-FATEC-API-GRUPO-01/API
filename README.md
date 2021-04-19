@@ -77,7 +77,7 @@ Você também pode usar a API de geocodificação para localizar o endereço de 
 latlng - Os valores de latitude e longitude especificando o local para o qual você deseja obter o endereço mais próximo e legível.
 Certifique-se de que não haja espaço entre os valores de latitude e longitude quando passados no latlng parâmetro.
 
-(colocar print addressLatLong aqui)
+(colocar print addressLatLong aqui).
 Os "formatted_address"resultados não são apenas endereços postais, mas qualquer forma de nomear geograficamente um local. Por exemplo, ao geocodificar um ponto na cidade de Chicago, o ponto geocodificado pode ser denotado como um endereço de rua, como a cidade (Chicago), como seu estado (Illinois) ou como um país (Estados Unidos). Todos são "endereços" para o geocodificador. O geocodificador reverso retorna qualquer um desses tipos como resultados válidos.
 
 
