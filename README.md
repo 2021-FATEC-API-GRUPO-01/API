@@ -143,7 +143,7 @@ No final do arquivo você pode configurar a main function que será usada para c
     if __name__ == "__main__":
         main()
         
-#### Adicionando as variáveis url, data, bearer_tokenm res_json. A main function ficará:
+#### Adicionando as variáveis url, data, bearer_token, res_json. A main function ficará:
     def main():
         url = create_twitter_url()
         data = process_yaml()
