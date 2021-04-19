@@ -65,7 +65,7 @@ Usaremos um algoritmo de recomendação para o setor de vendas do SPC, que irá 
 
 ## Overview técnico
 
-### O que é geocodificação?
+### Google Maps API - O que é geocodificação?
 Geocodificação é o processo de conversão de endereços em coordenadas geográficas (como latitude 37,423021 e longitude -122,083739), que você pode usar para colocar marcadores em um mapa ou posicionar o mapa.
 
 A geocodificação reversa é o processo de conversão de coordenadas geográficas em um endereço legível por humanos.
@@ -77,8 +77,32 @@ Você também pode usar a API de geocodificação para localizar o endereço de 
 latlng - Os valores de latitude e longitude especificando o local para o qual você deseja obter o endereço mais próximo e legível.
 Certifique-se de que não haja espaço entre os valores de latitude e longitude quando passados no latlng parâmetro.
 
-(colocar print addressLatLong aqui).
+(colocar print addressLatLong aqui)
 Os "formatted_address"resultados não são apenas endereços postais, mas qualquer forma de nomear geograficamente um local. Por exemplo, ao geocodificar um ponto na cidade de Chicago, o ponto geocodificado pode ser denotado como um endereço de rua, como a cidade (Chicago), como seu estado (Illinois) ou como um país (Estados Unidos). Todos são "endereços" para o geocodificador. O geocodificador reverso retorna qualquer um desses tipos como resultados válidos.
+
+### Twitter API (Análise de Sentimentos)
+
+Necessário:
+
+  Python 3;
+  Conta Twitter Developer;
+  Projeto e App, podem ser criados na sua conta (Twitter developer);
+  Bearer token (para o cadastro do seu App);
+  Conta Microsoft Azure’s Text Analytics Cognitive Service e um endpoint criado (ver o guia da Microsoft para chamadas di Text Abalytics API);
+  
+  Um diretório para o projeto:
+  
+    mkdir how-positive-was-your-week
+    cd how-positive-was-your-week
+    touch week.py
+    touch config.yaml
+
+Configurando o config.yaml
+
+  search_tweets_api:
+    bearer_token: xxxxxxxxxxxxxxxxxxxxxxx
+  azure:
+    subscription_key: xxxxxxxxxxxxxxxxxxxxxxx
 
 
  ## Saiba mais
