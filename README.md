@@ -112,7 +112,6 @@ Os "formatted_address"resultados não são apenas endereços postais, mas qualqu
     import ast
     import yaml
     
-    
 #### Config da URL
 
     def create_twitter_url():
@@ -125,23 +124,34 @@ Os "formatted_address"resultados não são apenas endereços postais, mas qualqu
         )
         return url
         
-A URL criada será: 
-https://api.twitter.com/2/tweets/search/recent?max_results=100&query=from:nomeUsuarioAqui
+#### URL Criada Será:
+
+    https://api.twitter.com/2/tweets/search/recent?max_results=100&query=from:nomeUsuarioAqui
     
+#### Autenticação (config.yaml)
+
+    def process_yaml():
+        with open("config.yaml") as file:
+            return yaml.safe_load(file)
+        
 #### Configurando a main function
 No final do arquivo você pode configurar a main function que será usada para chamar todas as funções que você criar. Você pode adicionar a função que você criou e chamar a função com uma condição if __name__ == "__main__"
 
     def main():
         url = create_twitter_url()
-
+        
     if __name__ == "__main__":
         main()
         
+#### Adicionando as variáveis url, data, bearer_tokenm res_json. A main function ficará:
+    def main():
+        url = create_twitter_url()
+        data = process_yaml()
+        bearer_token = create_bearer_token(data)
+        res_json = twitter_auth_and_connect(bearer_token, url)
         
-        
-        
-        
-        
+    if __name__ == "__main__":
+        main()
         
  ## Saiba mais
   #### :bellhop_bell:  Links úteis, FAQ e Leitura:
