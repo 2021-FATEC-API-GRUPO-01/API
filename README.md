@@ -137,6 +137,17 @@ Os "formatted_address"resultados não são apenas endereços postais, mas qualqu
         with open("config.yaml") as file:
             return yaml.safe_load(file)
         
+Está função retorna:
+
+    {'data': [{'id': '1272881032308629506', 'text': '@nomadaisy @kndl I just want to do deals with you'}, {'id': '1272880943687258112', 'text': '@nomadaisy @kndl I live too far away to hang responsibly with y’all 😬😭'}, {'id': '1272711045606408192', 'text': '@Babycastles https://t.co/Yfj8SJAnpG'}, {'id': '1272390182231330816', 'text': '@replylord Haha, I broke a glass in your honor today and all so I think I do read your Tweets'}, {'id': '1271810907274915840', 'text': '@replylord I like that I’m the only like here.'}, {'id': '1271435152183476225', 'text': '@Arfness @ChicagoPython @codewithbri @WeCodeDreams @agfors The video seems to be available https://t.co/GojUGdulkP'}, {'id': '1271111488024064001', 'text': 'RT @TwitterDev: Tune in tonight and watch as @jessicagarson takes us through running your favorite Python package in R. 🍿\n\nLearn how to use…'}, {'id': '1270794941892046848', 'text': 'RT @ChicagoPython: Chicago Python will be live-streaming tmrw night!\n\nOur talks:\n- How to run your favorite Python package in R by @jessica…'}, {'id': '1270485552488427521', 'text': "Speaking virtually at @ChicagoPython's __main__ meeting on Thursday night. I'll be showing how to run your favorite Python package in R. https://t.co/TnqgO80I3t"}], 'meta': {'newest_id': '1272881032308629506', 'oldest_id': '1270485552488427521', 'result_count': 9}}
+    
+#### Conexão com Twitter
+
+    def twitter_auth_and_connect(bearer_token, url):
+        headers = {"Authorization": "Bearer {}".format(bearer_token)}
+        response = requests.request("GET", url, headers=headers)
+        return response.json()
+
 #### Configurando a main function
 No final do arquivo você pode configurar a main function que será usada para chamar todas as funções que você criar. Você pode adicionar a função que você criou e chamar a função com uma condição if __name__ == "__main__"
 
