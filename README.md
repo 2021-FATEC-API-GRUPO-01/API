@@ -50,18 +50,20 @@ Usaremos um algoritmo de recomendação para o setor de vendas do SPC, que irá 
 
 * <p>
   <a href="https://flask.palletsprojects.com/en/1.1.x/">
+  <img alt="Python" src="https://user-images.githubusercontent.com/26223657/115167814-3121d380-a08f-11eb-93a0-285ddf1e8fac.png" height="30px" style="max-width:100%;"> </a> 
   Flask                                                                                                                                           
 </p>
 
 * <p>
   <a href="https://jinja.palletsprojects.com/en/2.10.x/api/">
-    <img alt="Jinja2" src="https://user-images.githubusercontent.com/26223657/115167829-3f6fef80-a08f-11eb-8f52-7fb2e79b760a.png" height="30px"style="max-width: 100%;"> </a>
+  <img alt="Jinja2" src="https://user-images.githubusercontent.com/26223657/115167829-3f6fef80-a08f-11eb-8f52-7fb2e79b760a.png" height="30px"style="max-width: 100%;"> </a>
     
   Jinja2                                                                                                                                           
 </p>
 
 * <p>
   <a href="https://getbootstrap.com/">
+  <img alt="Jinja2" src="https://user-images.githubusercontent.com/26223657/115167815-32eb9700-a08f-11eb-92d5-d5c1d86c733c.png" height="30px"style="max-width: 100%;"> </a>
   Bootstrap                                                                                                                                           
 </p>
 
