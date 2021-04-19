@@ -86,6 +86,8 @@ Os "formatted_address"resultados não são apenas endereços postais, mas qualqu
 
 ### Twitter API (Análise de Sentimentos)
 
+Tweets combinados com scores de sentimentos podem oferecer um medidor para os Tweets de maneira quantitativa. Para isto, pode-se usar Python, o endpoint recente de busca do Twitter para explorar os Tweets até dos últimos sete dias e o Serviço Cognitivo de Análise de Texto do Microsoft Azure para detectar os idiomas e determinar os scores de sentimentos.
+
 #### Necessário
 
   Python 3;
