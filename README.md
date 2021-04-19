@@ -82,7 +82,7 @@ Os "formatted_address"resultados não são apenas endereços postais, mas qualqu
 
 ### Twitter API (Análise de Sentimentos)
 
-Necessário:
+#### Necessário
 
   Python 3;
   Conta Twitter Developer;
@@ -90,25 +90,62 @@ Necessário:
   Bearer token (para o cadastro do seu App);
   Conta Microsoft Azure’s Text Analytics Cognitive Service e um endpoint criado (ver o guia da Microsoft para chamadas di Text Abalytics API);
   
-  Um diretório para o projeto:
+  #### Um diretório para o projeto:
   
     mkdir how-positive-was-your-week
     cd how-positive-was-your-week
     touch week.py
     touch config.yaml
 
-Configurando o config.yaml
+#### Configurando o config.yaml
 
-  search_tweets_api:
-    bearer_token: xxxxxxxxxxxxxxxxxxxxxxx
-  azure:
-    subscription_key: xxxxxxxxxxxxxxxxxxxxxxx
+    search_tweets_api:
+      bearer_token: xxxxxxxxxxxxxxxxxxxxxxx
+    azure:
+      subscription_key: xxxxxxxxxxxxxxxxxxxxxxx
 
+#### Instalar as bibliotecas Requests, PyYaML e Pandas
 
+    import requests
+    import pandas as pd
+    import json
+    import ast
+    import yaml
+    
+    
+#### Config da URL
+
+    def create_twitter_url():
+        handle = "nomeUsuarioAqui"
+        max_results = 100
+        mrf = "max_results={}".format(max_results)
+        q = "query=from:{}".format(handle)
+        url = "https://api.twitter.com/2/tweets/search/recent?{}&{}".format(
+            mrf, q
+        )
+        return url
+        
+A URL criada será: 
+https://api.twitter.com/2/tweets/search/recent?max_results=100&query=from:nomeUsuarioAqui
+    
+#### Configurando a main function
+No final do arquivo você pode configurar a main function que será usada para chamar todas as funções que você criar. Você pode adicionar a função que você criou e chamar a função com uma condição if __name__ == "__main__"
+
+    def main():
+        url = create_twitter_url()
+
+    if __name__ == "__main__":
+        main()
+        
+        
+        
+        
+        
+        
+        
  ## Saiba mais
   #### :bellhop_bell:  Links úteis, FAQ e Leitura:
   <a href="https://github.com/2021-FATEC-API-GRUPO-01/API/wiki/Welcome-to-the-SPC-PROJECT-wiki!"> Acesse aqui </a> para saber mais.
-
 
 
 ## Entregas
