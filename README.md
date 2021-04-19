@@ -270,7 +270,7 @@ Em conjunto com o endpoint de sentimentos do Azure, é necessário combinar os d
 * Estudos sobre IA
 * Análise na API do Twitter
 * Elaboração das bases de dados
-* Data: (29/03/2021 a 04/04/2021)
+* Data: (29/03/2021 a 18/04/2021)
 
   A entrega foi a complementação da base de dados com fontes externas como por exemplo: dados raspados pela api twitter.
   Utilizamos a api do google maps para transformar as coordenadas em nomes de locais.
