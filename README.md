@@ -91,7 +91,8 @@ Os "formatted_address"resultados não são apenas endereços postais, mas qualqu
   Conta Twitter Developer;
   Projeto e App, podem ser criados na sua conta (Twitter developer);
   Bearer token (para o cadastro do seu App);
-  Conta Microsoft Azure’s Text Analytics Cognitive Service e um endpoint criado (ver o guia da Microsoft para chamadas di Text Abalytics API);
+  Conta Microsoft Azure’s Text Analytics Cognitive Service e um endpoint criado (ver o guia da Microsoft para chamadas do Text Abalytics API);
+  Será criado um dicionário.
   
   #### Um diretório para o projeto:
   
@@ -136,10 +137,6 @@ Os "formatted_address"resultados não são apenas endereços postais, mas qualqu
     def process_yaml():
         with open("config.yaml") as file:
             return yaml.safe_load(file)
-        
-Está função retorna:
-
-    {'data': [{'id': '1272881032308629506', 'text': '@nomadaisy @kndl I just want to do deals with you'}, {'id': '1272880943687258112', 'text': '@nomadaisy @kndl I live too far away to hang responsibly with y’all 😬😭'}, {'id': '1272711045606408192', 'text': '@Babycastles https://t.co/Yfj8SJAnpG'}, {'id': '1272390182231330816', 'text': '@replylord Haha, I broke a glass in your honor today and all so I think I do read your Tweets'}, {'id': '1271810907274915840', 'text': '@replylord I like that I’m the only like here.'}, {'id': '1271435152183476225', 'text': '@Arfness @ChicagoPython @codewithbri @WeCodeDreams @agfors The video seems to be available https://t.co/GojUGdulkP'}, {'id': '1271111488024064001', 'text': 'RT @TwitterDev: Tune in tonight and watch as @jessicagarson takes us through running your favorite Python package in R. 🍿\n\nLearn how to use…'}, {'id': '1270794941892046848', 'text': 'RT @ChicagoPython: Chicago Python will be live-streaming tmrw night!\n\nOur talks:\n- How to run your favorite Python package in R by @jessica…'}, {'id': '1270485552488427521', 'text': "Speaking virtually at @ChicagoPython's __main__ meeting on Thursday night. I'll be showing how to run your favorite Python package in R. https://t.co/TnqgO80I3t"}], 'meta': {'newest_id': '1272881032308629506', 'oldest_id': '1270485552488427521', 'result_count': 9}}
     
 #### Conexão com Twitter
 
@@ -166,6 +163,83 @@ No final do arquivo você pode configurar a main function que será usada para c
         
     if __name__ == "__main__":
         main()
+        
+### Gerando Idiomas
+
+    def lang_data_shape(res_json):
+        data_only = res_json["data"]
+        doc_start = '"documents": {}'.format(data_only)
+        str_json = "{" + doc_start + "}"
+        dump_doc = json.dumps(str_json)
+        doc = json.loads(dump_doc)
+        return ast.literal_eval(doc
+    
+#### Formatando os dados para usar o Azure
+
+    def connect_to_azure(data):
+        azure_url = "https://week.cognitiveservices.azure.com/"
+        language_api_url = "{}text/analytics/v2.1/languages".format(azure_url)
+        sentiment_url = "{}text/analytics/v2.1/sentiment".format(azure_url)
+        subscription_key = data["azure"]["subscription_key"]
+        return language_api_url, sentiment_url, subscription_key
+        
+#### Criando o header para o Azure
+
+    def generate_languages(headers, language_api_url, documents):
+        response = requests.post(language_api_url, headers=headers, json=documents)
+        return response.json()
+
+### Obtendo os Scores dos Sentimentos
+
+Em conjunto com o endpoint de sentimentos do Azure, é necessário combinar os dados do Tweet com os dados que contém os idiomas gerados. Pode-se usar o pandas para auxiliar nesse processo de conversão. Pode-se converter o objeto json com os idiomas detectados em um data frame, criando uma lista de compreensão (baseada no idioma escolhido) que contém abreviações dos idiomas. As informaçãoes estarão dentro do dicionário.
+
+#### Dados do Tweet -> Json
+
+    def combine_lang_data(documents, with_languages):
+        langs = pd.DataFrame(with_languages["documents"])
+        lang_iso = [x.get("iso6391Name")
+                    for d in langs.detectedLanguages if d for x in d]
+        data_only = documents["documents"]
+        tweet_data = pd.DataFrame(data_only)
+        tweet_data.insert(2, "language", lang_iso, True)
+        json_lines = tweet_data.to_json(orient="records")
+        return json_lines
+
+#### Obtenção dos Scores de Sentimentos e preparação para enviar para o endpoint de sentimentos do Azure
+
+    def add_document_format(json_lines):
+        docu_format = '"' + "documents" + '"'
+        json_docu_format = "{}:{}".format(docu_format, json_lines)
+        docu_align = "{" + json_docu_format + "}"
+        jd_align = json.dumps(docu_align)
+        jl_align = json.loads(jd_align)
+        return ast.literal_eval(jl_align)
+
+#### Fazendo POST request para o endpoint de sentimentos do Azure
+
+    def sentiment_scores(headers, sentiment_url, document_format):
+        response = requests.post(
+            sentiment_url, headers=headers, json=document_format)
+        return response.json()
+      
+#### No final a main function ficará:
+
+    def main():
+        url = create_twitter_url()
+        data = process_yaml()
+        bearer_token = create_bearer_token(data)
+        res_json = twitter_auth_and_connect(bearer_token, url)
+        documents = lang_data_shape(res_json)
+        language_api_url, sentiment_url, subscription_key = connect_to_azure(data)
+        headers = azure_header(subscription_key)
+        with_languages = generate_languages(headers, language_api_url, documents)
+        json_lines = combine_lang_data(documents, with_languages)
+        document_format = add_document_format(json_lines)
+        sentiments = sentiment_scores(headers, sentiment_url, document_format)
+        week_score = mean_score(sentiments)
+        print(week_score)
+        week_logic(week_score)
+        
         
  ## Saiba mais
   #### :bellhop_bell:  Links úteis, FAQ e Leitura:
