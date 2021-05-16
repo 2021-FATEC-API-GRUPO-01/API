@@ -245,7 +245,7 @@ Em conjunto com o endpoint de sentimentos do Azure, é necessário combinar os d
   ### Scikit Lean:
   Scikit-learn fornece dezenas de modelos e algoritmos de aprendizado de máquina integrados, chamados estimadores . Cada estimador pode ser ajustado a alguns dados usando seu   método de ajuste .
   
-<img alt="Learn" src="https://user-images.githubusercontent.com/42500368/118414380-93fc8f80-b67a-11eb-8f83-8a2b616b708a.png" height="300px" width="300px""> 
+<img alt="Learn" src="https://user-images.githubusercontent.com/42500368/118414380-93fc8f80-b67a-11eb-8f83-8a2b616b708a.png" height="300px" width="300px"> 
         
  ## Saiba mais
   #### :bellhop_bell:  Links úteis, FAQ e Leitura:
