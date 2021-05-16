@@ -260,7 +260,7 @@ Cada algoritmo de agrupamento vem em duas variantes: uma classe, que implementa 
 
 Classificador que implementa a votação de k-vizinhos mais próximos.
 
-<img alt="Learn" src="https://user-images.githubusercontent.com/42500368/118415042-6e718500-b67e-11eb-90bc-6de3d5aae85d.png" height="500px" width="700px">
+<img alt="Learn" src="https://user-images.githubusercontent.com/42500368/118415042-6e718500-b67e-11eb-90bc-6de3d5aae85d.png" height="350px" width="700px">
 
  ## Saiba mais
   #### :bellhop_bell:  Links úteis, FAQ e Leitura:
