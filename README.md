@@ -65,6 +65,11 @@ Desenvolveremos um sistema web onde o analista poderá logar e visualizar as an�
   <img alt="Bootstrap" src="https://user-images.githubusercontent.com/26223657/115167815-32eb9700-a08f-11eb-92d5-d5c1d86c733c.png" height="30px"style="max-width: 100%;"> </a>
   Bootstrap                                                                                                                                           
 </p>
+* <p>
+  <a href="https://scikit-learn.org/">
+  <img alt="Scikit-Learn" src="https://user-images.githubusercontent.com/42500368/118415143-15eeb780-b67f-11eb-9873-d09400d1a8fa.png" height="30px"style="max-width: 100%;"> </a>
+  Bootstrap                                                                                                                                           
+</p>
 
 ## Overview técnico
 
