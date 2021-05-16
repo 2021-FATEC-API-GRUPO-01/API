@@ -303,11 +303,14 @@ Classificador que implementa a votação de k-vizinhos mais próximos.
  
   
 ### Sprint 3:
-* Integração da IA com as bases de dados
-* Integração da IA com o back end
+* Integração do machine learn com as bases de dados
+* Integração do machine learn com o back end
 * Detalhamentos dos processos técnicos
 * Iniciação do front end
 * Data: (26/04/2021 a 16/05/2021)
+
+A entrega foi o desenvolvimento do machine learn e a integração com os dados e o back end com uma interface no front end
+<img src="https://user-images.githubusercontent.com/42500368/118415583-87c80080-b681-11eb-8d73-4c75ff767dcf.gif" width="900" height="700" />
 
 ### Sprint 4:
 * Deploy do Front
