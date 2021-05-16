@@ -256,7 +256,7 @@ Em conjunto com o endpoint de sentimentos do Azure, é necessário combinar os d
   
 <img alt="Learn" src="https://user-images.githubusercontent.com/42500368/118414380-93fc8f80-b67a-11eb-8f83-8a2b616b708a.png" height="300px" width="700px"> 
 
-Divida arrays ou matrizes em train aleatório e subconjuntos de teste
+ model_selection import train_test_split para dividir arrays ou matrizes em train aleatório e subconjuntos de teste
 
 Utilitário rápido que envolve a validação de entrada next(ShuffleSplit().split(X, y)) e aplicativo para inserir dados em uma única chamada para dividir (e opcionalmente subamostrar) dados em uma linha.
 
