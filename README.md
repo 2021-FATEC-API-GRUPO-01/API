@@ -244,12 +244,12 @@ Em conjunto com o endpoint de sentimentos do Azure, é necessário combinar os d
         week_logic(week_score)
   ### Scikit Lean:
   Scikit-learn fornece dezenas de modelos e algoritmos de aprendizado de máquina integrados, chamados estimadores . Cada estimador pode ser ajustado a alguns dados usando seu   método de ajuste .
-<a href="ttps://user-images.githubusercontent.com/42500368/118414380-93fc8f80-b67a-11eb-8f83-8a2b616b708a.png">
-
+<img alt="Learn" src="https://user-images.githubusercontent.com/42500368/118414380-93fc8f80-b67a-11eb-8f83-8a2b616b708a.png" height="100px" style="max-width:100%;"> 
         
  ## Saiba mais
   #### :bellhop_bell:  Links úteis, FAQ e Leitura:
   <a href="https://github.com/2021-FATEC-API-GRUPO-01/API/wiki/Welcome-to-the-SPC-PROJECT-wiki!"> Acesse aqui </a> para saber mais.
+  
 
 
 ## Entregas
