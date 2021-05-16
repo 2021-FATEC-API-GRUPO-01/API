@@ -245,8 +245,23 @@ Em conjunto com o endpoint de sentimentos do Azure, é necessário combinar os d
   ### Scikit Lean:
   Scikit-learn fornece dezenas de modelos e algoritmos de aprendizado de máquina integrados, chamados estimadores . Cada estimador pode ser ajustado a alguns dados usando seu   método de ajuste .
   
+  LabelEncoder pode ser usado para normalizar rótulos.
+  MinMaxScaler este estimador dimensiona e traduz cada característica individualmente de forma que esteja no intervalo dado no conjunto de treinamento, por exemplo, entre zero e um.
+  
 <img alt="Learn" src="https://user-images.githubusercontent.com/42500368/118414380-93fc8f80-b67a-11eb-8f83-8a2b616b708a.png" height="300px" width="700px"> 
-        
+
+Divida arrays ou matrizes em train aleatório e subconjuntos de teste
+
+Utilitário rápido que envolve a validação de entrada next(ShuffleSplit().split(X, y)) e aplicativo para inserir dados em uma única chamada para dividir (e opcionalmente subamostrar) dados em uma linha.
+
+Cada algoritmo de agrupamento vem em duas variantes: uma classe, que implementa o fit método para aprender os clusters nos dados do train, e uma função, que, dado os dados do train, retorna uma matriz de rótulos inteiros correspondentes aos diferentes clusters. Para a classe, os rótulos sobre os dados de treinamento podem ser encontrados no labels_ attribute
+
+<img alt="Learn" src="https://user-images.githubusercontent.com/42500368/118414997-29e5e980-b67e-11eb-9e43-7af29eedad48.png" height="500px" width="700px"> 
+
+Classificador que implementa a votação de k-vizinhos mais próximos.
+
+<img alt="Learn" src="https://user-images.githubusercontent.com/42500368/118415042-6e718500-b67e-11eb-90bc-6de3d5aae85d.png" height="500px" width="700px">
+
  ## Saiba mais
   #### :bellhop_bell:  Links úteis, FAQ e Leitura:
   <a href="https://github.com/2021-FATEC-API-GRUPO-01/API/wiki/Welcome-to-the-SPC-PROJECT-wiki!"> Acesse aqui </a> para saber mais.
