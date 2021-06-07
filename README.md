@@ -82,6 +82,7 @@ A entrega foi o desenvolvimento do machine learn e a integração com os dados e
 ### Sprint 4:
 * Finalização do front
 * Funcionalidade para usar dados apartir de um csv
+* Funcionalidade para salvar uma recomendação
 * Integração do Frontend com o Backend
 * Data: (17/05/2021 a 06/06/2020)
 
