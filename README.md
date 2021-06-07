@@ -80,8 +80,8 @@ A entrega foi o desenvolvimento do machine learn e a integração com os dados e
 <img src="https://user-images.githubusercontent.com/42500368/118415583-87c80080-b681-11eb-8d73-4c75ff767dcf.gif" width="900" height="700" />
 
 ### Sprint 4:
-* Deploy do Front
-* Diagramação UML
+* Finalização do front
+* Funcionalidade para usar dados apartir de um csv
 * Integração do Frontend com o Backend
 * Data: (17/05/2021 a 06/06/2020)
 
