@@ -7,7 +7,6 @@
   <a href="#entregas">Entregas</a> |
   <a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a> |
   <a href="#overview-técnico">Tech Overview</a> |
-  
   <a href="#saiba-mais">Saiba mais</a>
 </p>
 
