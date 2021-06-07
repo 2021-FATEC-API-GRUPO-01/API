@@ -86,6 +86,9 @@ A entrega foi o desenvolvimento do machine learn e a integração com os dados e
 * Integração do Frontend com o Backend
 * Data: (17/05/2021 a 05/06/2020)
 
+Foi adicionado uma opção para dados via csv e não mais somente por banco de dados, foi adicionado um sistema de usuário para que cada analista possa salvar recomendações de suas analises 
+<img src="https://user-images.githubusercontent.com/42500368/121062098-13254500-c79b-11eb-9aae-fb3067a0205e.gif" width="900" height="700" />
+
 ## Tecnologias Utilizadas
 * <p>
   <a href="https://www.python.org/">
